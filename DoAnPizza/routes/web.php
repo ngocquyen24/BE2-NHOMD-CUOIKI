@@ -40,3 +40,4 @@ Route::get('admin/users/register',[LoginController::class, 'indexRegister'])->na
 Route::post('admin/users/register',[LoginController::class, 'register'])->name('register');
 
 
+
