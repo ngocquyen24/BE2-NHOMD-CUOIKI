@@ -95,7 +95,11 @@ class LoginController extends Controller
         Session::flush();
         Auth::logout();
 
+<<<<<<< HEAD
         return Redirect('admin\users\login');
+=======
+        return Redirect('/');
+>>>>>>> Giỏ_Hàng
     }
 
     // public function postForgetPass(Request $request){

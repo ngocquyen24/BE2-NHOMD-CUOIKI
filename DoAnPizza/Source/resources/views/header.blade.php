@@ -34,7 +34,11 @@
                          data-notify="{{ !is_null(\Session::get('carts')) ? count(\Session::get('carts')) : 0 }}">
                         <i class="zmdi zmdi-shopping-cart"></i>
                     </div>
+<<<<<<< HEAD
                     <a href="{{ route('login')}}" class="btn btn-primary btn-block" >Login</a>
+=======
+
+>>>>>>> Giỏ_Hàng
 
 
 
@@ -91,7 +95,11 @@
                 <img src="/template/images/icons/icon-close2.png" alt="CLOSE">
             </button>
 
+<<<<<<< HEAD
             <form class="wrap-search-header flex-w p-l-15">
+=======
+            <form action="" class="wrap-search-header flex-w p-l-15" method="POST">
+>>>>>>> Giỏ_Hàng
                 <button class="flex-c-m trans-04">
                     <i class="zmdi zmdi-search"></i>
                 </button>

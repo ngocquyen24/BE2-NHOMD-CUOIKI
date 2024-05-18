@@ -16,9 +16,13 @@
             <span class="stext-109 cl4">
 				{{ $title }}
 			</span>
+<<<<<<< HEAD
            
         </div>
        
+=======
+        </div>
+>>>>>>> Giỏ_Hàng
     </div>
 
     <section class="sec-product-detail bg0 p-t-65 p-b-60">
