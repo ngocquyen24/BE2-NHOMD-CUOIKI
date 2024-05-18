@@ -45,13 +45,21 @@
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
+<<<<<<< HEAD
                 <a href="menus/add" class="nav-link">
+=======
+                <a href="/admin/menus/add" class="nav-link">
+>>>>>>> menu_home
                   <i class="far fa-circle nav-icon"></i>
                   <p>thêm danh mục  </p>
                 </a>
               </li>
               <li class="nav-item">
+<<<<<<< HEAD
                 <a href="menus/list" class="nav-link">
+=======
+                <a href="/admin/menus/list" class="nav-link">
+>>>>>>> menu_home
                   <i class="far fa-circle nav-icon"></i>
                   <p> danh sách danh mục
                   </p>
@@ -66,7 +74,10 @@
     </div>
     <!-- /.sidebar -->
   </aside>
+<<<<<<< HEAD
 
 
   
   
+=======
+>>>>>>> menu_home

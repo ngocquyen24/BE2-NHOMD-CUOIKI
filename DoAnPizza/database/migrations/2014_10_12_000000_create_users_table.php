@@ -17,8 +17,11 @@ return new class extends Migration
             $table->string('email',100)->unique();
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password',100);
+<<<<<<< HEAD
             $table->string('phone',100);
             $table->string('avatar',100);
+=======
+>>>>>>> menu_home
             $table->rememberToken();
             $table->timestamps();
         });
@@ -31,6 +34,7 @@ return new class extends Migration
     {
         Schema::dropIfExists('users');
     }
+<<<<<<< HEAD
     
 };
 
@@ -39,3 +43,6 @@ return new class extends Migration
 
 
 
+=======
+};
+>>>>>>> menu_home

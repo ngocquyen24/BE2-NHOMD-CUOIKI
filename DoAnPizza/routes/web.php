@@ -7,9 +7,12 @@ use App\Http\Controllers\Admin\MainController;
 use App\Http\Controllers\Admin\MenuController;
 use App\Http\Controllers\Admin\ProductController;
 use App\Http\Controllers\Admin\SliderController;
+<<<<<<< HEAD
 use App\Http\Controllers\Admin\UploadController;
 use App\Http\Controllers\Admin\ProductController;
 use App\Http\Controllers\Admin\Users\LoginController;
+=======
+>>>>>>> menu_home
 
 
 
@@ -34,7 +37,10 @@ Route::post('admin/users/login/store',[LoginController::class, 'store']);
 
 
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> menu_home
 // Route::get('admin/main',[MainController::class,'index'])->name('admin')->middleware('auth');
 
 
@@ -55,6 +61,7 @@ Route::middleware(['auth'])->group(function () {
             Route::DELETE('destroy', [MenuController::class, 'destroy']);
             
         });
+<<<<<<< HEAD
 
         #Product
         Route::prefix('product')->group(function () {
@@ -66,10 +73,13 @@ Route::middleware(['auth'])->group(function () {
             Route::DELETE('destroy', [ProductController::class, 'destroy']);
         });
         
+=======
+>>>>>>> menu_home
     });
 });
 
 
+<<<<<<< HEAD
 #Product
 #Product
 
@@ -78,5 +88,7 @@ Route::post('upload/services', [UploadController::class, 'store']);
 
 
 
+=======
+>>>>>>> menu_home
 
 

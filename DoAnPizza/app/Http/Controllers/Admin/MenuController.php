@@ -70,4 +70,7 @@ class MenuController extends Controller
 
     
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> menu_home

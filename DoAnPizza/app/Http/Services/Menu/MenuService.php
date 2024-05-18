@@ -7,8 +7,11 @@ namespace App\Http\Services\Menu;
 use App\Models\Menu;
 use Illuminate\Support\Facades\Session;
 use Illuminate\Support\Str;
+<<<<<<< HEAD
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Http\UploadedFile;
+=======
+>>>>>>> menu_home
 
 class MenuService
 {
@@ -24,6 +27,7 @@ class MenuService
 
     public function create($request)
     {
+<<<<<<< HEAD
 
         try {
             
@@ -44,6 +48,16 @@ class MenuService
             $menu->save();
 
             
+=======
+        try {
+            Menu::create([
+                'name' => (string)$request->input('name'),
+                'parent_id' => (int)$request->input('parent_id'),
+                'description' => (string)$request->input('description'),
+                'content' => (string)$request->input('content'),
+                'active' => (string)$request->input('active'),
+            ]);
+>>>>>>> menu_home
 
             Session::flash('success', 'Tạo Danh Mục Thành Công');
         } catch (\Exception $err) {
@@ -52,10 +66,13 @@ class MenuService
         }
 
         return true;
+<<<<<<< HEAD
 
         
 
 
+=======
+>>>>>>> menu_home
     }
     public function destroy($request)
     {
@@ -84,4 +101,7 @@ class MenuService
     }
 
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> menu_home

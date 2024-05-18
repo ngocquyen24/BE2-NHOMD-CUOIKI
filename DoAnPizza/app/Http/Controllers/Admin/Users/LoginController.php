@@ -7,10 +7,13 @@ use Illuminate\Support\Facades\Session;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 
+<<<<<<< HEAD
 use Illuminate\Support\Facades\Hash;
 
 
 
+=======
+>>>>>>> menu_home
 
 
 class LoginController extends Controller
@@ -32,7 +35,11 @@ class LoginController extends Controller
 
        if(Auth::attempt(['email' => $request->input('email'),
             'password' => $request->input('password'),
+<<<<<<< HEAD
 
+=======
+            
+>>>>>>> menu_home
             ], $request->input('remember') )) {
             return redirect()->route('admin');
        }
@@ -40,6 +47,7 @@ class LoginController extends Controller
 
        return redirect()->back();
     }
+<<<<<<< HEAD
 
     public function indexRegister(){
 
@@ -90,3 +98,6 @@ class LoginController extends Controller
 }
 
 
+=======
+}
+>>>>>>> menu_home

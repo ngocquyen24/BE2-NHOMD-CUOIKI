@@ -12,6 +12,7 @@ class Menu extends Model
     protected $fillable = [
         'name',
         'parent_id',
+<<<<<<< HEAD
         'images',
         'description',
         'content',
@@ -20,5 +21,13 @@ class Menu extends Model
     ];
 
     
+=======
+        'description',
+        'content',
+        'active',
+   
+    ];
+
+>>>>>>> menu_home
 
 }

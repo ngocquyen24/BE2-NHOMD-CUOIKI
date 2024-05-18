@@ -8,7 +8,11 @@ function removeRow(id, url) {
         $.ajax({
             type: 'DELETE',
             datatype: 'JSON',
+<<<<<<< HEAD
             data: {id},
+=======
+            data: { id },
+>>>>>>> menu_home
             url: url,
             success: function (result) {
                 if (result.error === false) {
@@ -21,6 +25,7 @@ function removeRow(id, url) {
         })
     }
 }
+<<<<<<< HEAD
 
 
 /*Upload File */
@@ -47,3 +52,5 @@ $('#upload').change(function () {
         }
     });
 });
+=======
+>>>>>>> menu_home

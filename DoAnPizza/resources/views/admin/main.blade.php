@@ -87,8 +87,11 @@
 @include('admin.footer')
 </body>
 </html>
+<<<<<<< HEAD
 
 
 
 
 
+=======
+>>>>>>> menu_home

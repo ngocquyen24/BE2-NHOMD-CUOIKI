@@ -29,8 +29,11 @@
         "files":[
             "app/Helpers/Helper.php"
         ]
+<<<<<<< HEAD
         }
 
+=======
+>>>>>>> menu_home
     },
     "autoload-dev": {
         "psr-4": {
@@ -71,6 +74,9 @@
     "minimum-stability": "stable",
     "prefer-stable": true
 }
+<<<<<<< HEAD
 
 
 
+=======
+>>>>>>> menu_home

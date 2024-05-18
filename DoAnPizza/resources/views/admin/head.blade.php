@@ -12,4 +12,7 @@
   <link rel="stylesheet" href="/template/admin/dist/css/adminlte.min.css">
   <meta name="csrf-token" content="{{ csrf_token() }}">
 @yield('head')
+<<<<<<< HEAD
 
+=======
+>>>>>>> menu_home
