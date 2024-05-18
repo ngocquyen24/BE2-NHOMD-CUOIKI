@@ -5,10 +5,7 @@ class Helper
 {
     public static function menu($menus, $parent_id = 0, $char = '')
     {
-<<<<<<< HEAD
         
-=======
->>>>>>> menu_home
         $html = '';
 
         foreach ($menus as $key => $menu) {
@@ -19,11 +16,8 @@ class Helper
                         <td>' . $char . $menu->name . '</td>
                         <td>' . self::active($menu->active) . '</td>
                         <td>' . $menu->updated_at . '</td>
-<<<<<<< HEAD
                         
                         <td> <img width="70px" height="70px"  src="' . asset('images/'.$menu->images.'') . '" > </td>
-=======
->>>>>>> menu_home
                         <td>
                             <a class="btn btn-primary btn-sm" href="/admin/menus/edit/' . $menu->id . '">
                                 <i class="fas fa-edit"></i>
@@ -35,11 +29,7 @@ class Helper
                         </td>
                     </tr>
                 ';
-<<<<<<< HEAD
 
-=======
- 
->>>>>>> menu_home
                 unset($menus[$key]);
 
                 $html .= self::menu($menus, $menu->id, $char . '|--');
@@ -54,7 +44,3 @@ class Helper
             : '<span class="btn btn-success btn-xs">YES</span>';
     }
 }
-<<<<<<< HEAD
-
-=======
->>>>>>> menu_home

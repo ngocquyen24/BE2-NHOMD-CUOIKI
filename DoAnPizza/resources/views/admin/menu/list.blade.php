@@ -11,11 +11,8 @@
                 <th>Name</th>
                 <th>Active</th>
                 <th>Update</th>
-<<<<<<< HEAD
                 <th>Images</th>
              
-=======
->>>>>>> menu_home
                 <th style="width: 100px">&nbsp;</th>
             </tr>
     </thead>
@@ -26,7 +23,3 @@
 @endsection
 
 
-<<<<<<< HEAD
-
-=======
->>>>>>> menu_home

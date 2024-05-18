@@ -2,17 +2,12 @@
 namespace Illuminate\Session\Middleware;
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\Admin\Users\LoginController;
 use App\Http\Controllers\Admin\MainController;
 use App\Http\Controllers\Admin\MenuController;
-use App\Http\Controllers\Admin\ProductController;
 use App\Http\Controllers\Admin\SliderController;
-<<<<<<< HEAD
 use App\Http\Controllers\Admin\UploadController;
 use App\Http\Controllers\Admin\ProductController;
 use App\Http\Controllers\Admin\Users\LoginController;
-=======
->>>>>>> menu_home
 
 
 
@@ -37,10 +32,6 @@ Route::post('admin/users/login/store',[LoginController::class, 'store']);
 
 
 
-<<<<<<< HEAD
-
-=======
->>>>>>> menu_home
 // Route::get('admin/main',[MainController::class,'index'])->name('admin')->middleware('auth');
 
 
@@ -61,7 +52,6 @@ Route::middleware(['auth'])->group(function () {
             Route::DELETE('destroy', [MenuController::class, 'destroy']);
             
         });
-<<<<<<< HEAD
 
         #Product
         Route::prefix('product')->group(function () {
@@ -72,14 +62,22 @@ Route::middleware(['auth'])->group(function () {
             Route::post('edit/{product}', [ProductController::class, 'update']);
             Route::DELETE('destroy', [ProductController::class, 'destroy']);
         });
+
+        #Slider
+        Route::prefix('sliders')->group(function () {
+            Route::get('add', [SliderController::class, 'create']);
+            Route::post('add', [SliderController::class, 'store']);
+            Route::get('list', [SliderController::class, 'index']);
+            Route::get('edit/{slider}', [SliderController::class, 'show']);
+            Route::post('edit/{slider}', [SliderController::class, 'update']);
+            Route::DELETE('destroy', [SliderController::class, 'destroy']);
+        });
+
         
-=======
->>>>>>> menu_home
     });
 });
 
 
-<<<<<<< HEAD
 #Product
 #Product
 
@@ -87,8 +85,5 @@ Route::middleware(['auth'])->group(function () {
 Route::post('upload/services', [UploadController::class, 'store']);
 
 
-
-=======
->>>>>>> menu_home
 
 
