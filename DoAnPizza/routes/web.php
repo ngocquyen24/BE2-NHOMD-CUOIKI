@@ -1,9 +1,12 @@
 <?php
 namespace Illuminate\Session\Middleware;
 
-use App\Http\Controllers\Admin\MainController;
 use Illuminate\Support\Facades\Route;
-use \App\Http\Controllers\Admin\Users\LoginController;
+use App\Http\Controllers\Admin\Users\LoginController;
+use App\Http\Controllers\Admin\MainController;
+use App\Http\Controllers\Admin\MenuController;
+use App\Http\Controllers\Admin\ProductController;
+use App\Http\Controllers\Admin\SliderController;
 
 
 
@@ -32,12 +35,27 @@ Route::post('admin/users/login/store',[LoginController::class, 'store']);
 
 
 Route::middleware(['auth'])->group(function () {
-    Route::get('admin',[MainController::class,'index'])->name('admin');
-    Route::get('admin/main',[MainController::class,'index']);
+    Route::prefix('admin')->group(function () {
+
+        Route::get('/', [MainController::class, 'index'])->name('admin');
+        Route::get('main', [MainController::class, 'index']);
+
+        #Menu
+        Route::prefix('menus')->group(function () {
+            Route::get('add', [MenuController::class, 'create']);
+            Route::post('add', [MenuController::class, 'store']);
+
+            Route::get('list', [MenuController::class, 'index']);
+            Route::get('edit/{menu}', [MenuController::class, 'show']);
+            Route::post('edit/{menu}', [MenuController::class, 'update']);
+            Route::DELETE('destroy', [MenuController::class, 'destroy']);
+        });
+    });
 });
 
-Route::get('admin/users/register',[LoginController::class, 'indexRegister'])->name('indexRegister');
-Route::post('admin/users/register',[LoginController::class, 'register'])->name('register');
+
+
+
 
 
 

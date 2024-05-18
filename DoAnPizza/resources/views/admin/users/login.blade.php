@@ -43,17 +43,15 @@
             <!-- /.col -->
             <div class="col-4">
                 <button type="submit" class="btn btn-primary btn-block">Sign In</button>
-
             </div>
-            <a href="{{ route('indexRegister') }}" class="text-center">Do not have an account </a>
             <!-- /.col -->
             </div>
             @csrf
         </form>
 
-
+        
         </div>
-
+        
     </div>
     </div>
     <!-- /.login-box -->
@@ -61,4 +59,5 @@
 
 </body>
 </html>
+
 

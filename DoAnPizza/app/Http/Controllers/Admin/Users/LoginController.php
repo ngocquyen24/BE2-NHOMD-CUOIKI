@@ -3,7 +3,6 @@
 namespace App\Http\Controllers\Admin\Users;
 
 use App\Http\Controllers\Controller;
-use App\Models\User;
 use Illuminate\Support\Facades\Session;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
@@ -79,4 +78,5 @@ class LoginController extends Controller
         return redirect("admin\users\login");
     }
 }
+
 
