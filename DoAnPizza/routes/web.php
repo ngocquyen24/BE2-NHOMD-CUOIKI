@@ -8,6 +8,11 @@ use App\Http\Controllers\Admin\MenuController;
 use App\Http\Controllers\Admin\ProductController;
 use App\Http\Controllers\Admin\SliderController;
 
+use App\Http\Controllers\Admin\MainController;
+use Illuminate\Support\Facades\Route;
+use \App\Http\Controllers\Admin\Users\LoginController;
+
+
 
 
 
@@ -28,6 +33,7 @@ Route::get('/', function () {
 
 Route::get('admin/users/login',[LoginController::class, 'index'])->name('login');
 Route::post('admin/users/login/store',[LoginController::class, 'store']);
+
 
 
 
@@ -55,6 +61,17 @@ Route::middleware(['auth'])->group(function () {
 
 
 
+
+
+
+// Route::middleware(['auth'])->group(function () {
+
+// });
+
+//Route::get('admin/main',[MainController::class,'index'])->name('admin')->middleware('auth');
+Route::get('admin/main', function () {
+    Route::get('admin/main',[MainController::class,'index'])->name('admin');
+})->middleware('auth');
 
 
 
