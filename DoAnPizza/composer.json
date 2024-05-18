@@ -25,14 +25,13 @@
             "App\\": "app/",
             "Database\\Factories\\": "database/factories/",
             "Database\\Seeders\\": "database/seeders/"
-<<<<<<< HEAD
+
         },
         "files":[
             "app/Helpers/Helper.php"
         ]
-=======
         }
->>>>>>> origin/menu
+
     },
     "autoload-dev": {
         "psr-4": {
@@ -73,7 +72,4 @@
     "minimum-stability": "stable",
     "prefer-stable": true
 }
-<<<<<<< HEAD
 
-=======
->>>>>>> origin/menu

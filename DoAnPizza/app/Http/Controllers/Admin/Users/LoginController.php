@@ -6,12 +6,12 @@ use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Session;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
-<<<<<<< HEAD
+
 use Illuminate\Support\Facades\Hash;
-=======
 
 
->>>>>>> origin/menu
+
+
 
 class LoginController extends Controller
 {
@@ -27,18 +27,12 @@ class LoginController extends Controller
        $this->validate($request, [
             'email' => 'required|email:filter',
             'password' => 'required',
-<<<<<<< HEAD
 
-=======
->>>>>>> origin/menu
        ]);
 
        if(Auth::attempt(['email' => $request->input('email'),
             'password' => $request->input('password'),
-<<<<<<< HEAD
 
-=======
->>>>>>> origin/menu
             ], $request->input('remember') )) {
             return redirect()->route('admin');
        }
@@ -46,7 +40,6 @@ class LoginController extends Controller
 
        return redirect()->back();
     }
-<<<<<<< HEAD
 
     public function indexRegister(){
 
@@ -92,6 +85,7 @@ class LoginController extends Controller
 }
 
 
-=======
+
 }
->>>>>>> origin/menu
+
+
