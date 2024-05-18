@@ -11,6 +11,8 @@
                 <th>Name</th>
                 <th>Active</th>
                 <th>Update</th>
+                <th>Images</th>
+             
                 <th style="width: 100px">&nbsp;</th>
             </tr>
     </thead>
@@ -19,5 +21,6 @@
         </tbody>
 </table>
 @endsection
+
 
 

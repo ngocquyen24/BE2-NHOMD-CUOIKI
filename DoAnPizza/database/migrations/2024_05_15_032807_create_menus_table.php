@@ -35,3 +35,4 @@ class CreateMenusTable extends Migration
         Schema::dropIfExists('menus');
     }
 }
+
