@@ -21,7 +21,7 @@
                 <td>{{ $product->id }}</td>
                 
                 <td>{{ $product->name }}</td>
-                <td><img  src="{{ asset('images/'.$product->images.'') }}"  style="width: 70px; height:70px;" alt=""></td>
+                <td><img src="{{ asset('images/'.$product->images) }}" style="width: 70px; height:70px;" alt=""></td>
                 <td>{{ $product->menu->name }}</td>
                 <td>{{ $product->price }}</td>
                 <td>{{ $product->price_sale }}</td>
@@ -31,8 +31,7 @@
                     <a class="btn btn-primary btn-sm" href="/admin/product/edit/{{ $product->id }}">
                         <i class="fas fa-edit"></i>
                     </a>
-                    <a href="#" class="btn btn-danger btn-sm"
-                       onclick="removeRow('.{{  $product->id }} .', '/admin/product/destroy')">
+                    <a href="#" class="btn btn-danger btn-sm" onclick="removeRow('{{ $product->id }}', '/admin/product/destroy')">
                         <i class="fas fa-trash"></i>
                     </a>
                 </td>

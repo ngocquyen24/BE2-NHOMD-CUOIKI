@@ -13,7 +13,3 @@ class MainController extends Controller
         ]);
     }
 }
-<<<<<<< HEAD
-
-=======
->>>>>>> menu_home

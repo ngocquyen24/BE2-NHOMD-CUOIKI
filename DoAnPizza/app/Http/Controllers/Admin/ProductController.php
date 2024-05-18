@@ -2,11 +2,12 @@
 
 namespace App\Http\Controllers\Admin;
 
+use App\Models\Product;
+use Illuminate\Http\Request;
+use Illuminate\Http\JsonResponse;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\Product\ProductRequest;
 use App\Http\Services\Product\ProductAdminService;
-use App\Models\Product;
-use Illuminate\Http\Request;
 
 class ProductController extends Controller
 {
@@ -62,7 +63,7 @@ class ProductController extends Controller
     }
 
 
-    public function destroy(Request $request)
+    public function destroy(Request $request): JsonResponse
     {
         $result = $this->productService->delete($request);
         if ($result) {

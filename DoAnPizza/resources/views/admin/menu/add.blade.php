@@ -7,11 +7,7 @@
 @endsection
 
 @section('content')
-<<<<<<< HEAD
     <form action="" method="POST" enctype="multipart/form-data">
-=======
-    <form action="" method="POST">
->>>>>>> menu_home
         <div class="card-body">
 
             <div class="form-group">
@@ -42,7 +38,6 @@
                 <textarea id="editor" class="form-control"></textarea>
             </div>
 
-<<<<<<< HEAD
             <div class="form-group">
                 <label for="menu">Ảnh Sản Phẩm</label>
                 <input type="file" name="images" class="form-control" id="upload">
@@ -51,9 +46,6 @@
                 </div>
                 <input type="hidden" name="thumb" id="thumb">
             </div>
-=======
-
->>>>>>> menu_home
 
             <div class="form-group">
                 <label>Kích Hoạt</label>
@@ -85,7 +77,3 @@
         } );
 </script>
 @endsection
-<<<<<<< HEAD
-
-=======
->>>>>>> menu_home
